@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UploadingDocxAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6e9374566c1a4f67090a822992bef60333a5a8a9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+66b919aee484b8fca068d350071b811b7cea32c0")]
 [assembly: System.Reflection.AssemblyProductAttribute("UploadingDocxAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UploadingDocxAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

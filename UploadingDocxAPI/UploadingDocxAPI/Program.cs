@@ -1,3 +1,7 @@
+using Azure.Identity;
+using Microsoft.Extensions.Azure;
+using UploadingDocxAPI.Services;
+
 namespace UploadingDocxAPI;
 
 public class Program
@@ -12,7 +16,13 @@ public class Program
         // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
+        builder.Services.AddSingleton<AzureBlobService>();
+        builder.Services.AddAzureClients(clientBuilder =>
+        {
+            clientBuilder.AddBlobServiceClient(new Uri(builder.Configuration["BlobStorageUri"]));
+            clientBuilder.UseCredential(new DefaultAzureCredential());
 
+        });
         var app = builder.Build();
 
         // Configure the HTTP request pipeline.
