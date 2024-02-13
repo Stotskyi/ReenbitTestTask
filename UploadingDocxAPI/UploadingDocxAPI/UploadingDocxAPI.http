@@ -1,0 +1,6 @@
+@UploadingDocxAPI_HostAddress = http://localhost:5210
+
+GET {{UploadingDocxAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
