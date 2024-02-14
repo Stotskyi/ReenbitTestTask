@@ -13,14 +13,15 @@ public class AzureBlobService
         _containerClient = _blobCliet.GetBlobContainerClient(configuration.GetValue<string>("BlobContainerName"));
     }
 
-    public async Task UploadFiles(IFormFile file)
+    public async Task<String> UploadFiles(IFormFile file)
     {
         BlobClient client = _containerClient.GetBlobClient(file.FileName);
         await using (MemoryStream data = new MemoryStream())
         {
             file.CopyTo(data);
             data.Position = 0;
-            await _containerClient.UploadBlobAsync(file.FileName, data, default);
+            var response = await  _containerClient.UploadBlobAsync(file.FileName, data, default);
+            return response.ToString();
         }
 
     }
