@@ -1,13 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Stocm\\source\\repos\\EmailSenderTriger\\",
+  "WorkspaceRootPath": "C:\\Users\\Stocm\\Desktop\\Reenbit\\ReenbitTestTask\\EmailSenderTriger\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{349B9B0B-955A-4831-9CE6-8027336086E9}|EmailSenderTriger\\EmailSenderTriger.csproj|c:\\users\\stocm\\source\\repos\\emailsendertriger\\emailsendertriger\\function1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{349B9B0B-955A-4831-9CE6-8027336086E9}|EmailSenderTriger\\EmailSenderTriger.csproj|solutionrelative:emailsendertriger\\function1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{349B9B0B-955A-4831-9CE6-8027336086E9}|EmailSenderTriger\\EmailSenderTriger.csproj|c:\\users\\stocm\\desktop\\reenbit\\reenbittesttask\\emailsendertriger\\emailsendertriger\\sendemailtriger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{349B9B0B-955A-4831-9CE6-8027336086E9}|EmailSenderTriger\\EmailSenderTriger.csproj|solutionrelative:emailsendertriger\\sendemailtriger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{349B9B0B-955A-4831-9CE6-8027336086E9}|EmailSenderTriger\\EmailSenderTriger.csproj|c:\\users\\stocm\\source\\repos\\emailsendertriger\\emailsendertriger\\local.settings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{349B9B0B-955A-4831-9CE6-8027336086E9}|EmailSenderTriger\\EmailSenderTriger.csproj|c:\\users\\stocm\\desktop\\reenbit\\reenbittesttask\\emailsendertriger\\emailsendertriger\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{349B9B0B-955A-4831-9CE6-8027336086E9}|EmailSenderTriger\\EmailSenderTriger.csproj|solutionrelative:emailsendertriger\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{349B9B0B-955A-4831-9CE6-8027336086E9}|EmailSenderTriger\\EmailSenderTriger.csproj|c:\\users\\stocm\\desktop\\reenbit\\reenbittesttask\\emailsendertriger\\emailsendertriger\\emailoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{349B9B0B-955A-4831-9CE6-8027336086E9}|EmailSenderTriger\\EmailSenderTriger.csproj|solutionrelative:emailsendertriger\\emailoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{349B9B0B-955A-4831-9CE6-8027336086E9}|EmailSenderTriger\\EmailSenderTriger.csproj|c:\\users\\stocm\\desktop\\reenbit\\reenbittesttask\\emailsendertriger\\emailsendertriger\\local.settings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{349B9B0B-955A-4831-9CE6-8027336086E9}|EmailSenderTriger\\EmailSenderTriger.csproj|solutionrelative:emailsendertriger\\local.settings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
@@ -18,32 +26,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "local.settings.json",
-              "DocumentMoniker": "C:\\Users\\Stocm\\source\\repos\\EmailSenderTriger\\EmailSenderTriger\\local.settings.json",
-              "RelativeDocumentMoniker": "EmailSenderTriger\\local.settings.json",
-              "ToolTip": "C:\\Users\\Stocm\\source\\repos\\EmailSenderTriger\\EmailSenderTriger\\local.settings.json",
-              "RelativeToolTip": "EmailSenderTriger\\local.settings.json",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Stocm\\Desktop\\Reenbit\\ReenbitTestTask\\EmailSenderTriger\\EmailSenderTriger\\Program.cs",
+              "RelativeDocumentMoniker": "EmailSenderTriger\\Program.cs",
+              "ToolTip": "C:\\Users\\Stocm\\Desktop\\Reenbit\\ReenbitTestTask\\EmailSenderTriger\\EmailSenderTriger\\Program.cs",
+              "RelativeToolTip": "EmailSenderTriger\\Program.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABcAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-14T11:51:57.992Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmailOptions.cs",
+              "DocumentMoniker": "C:\\Users\\Stocm\\Desktop\\Reenbit\\ReenbitTestTask\\EmailSenderTriger\\EmailSenderTriger\\EmailOptions.cs",
+              "RelativeDocumentMoniker": "EmailSenderTriger\\EmailOptions.cs",
+              "ToolTip": "C:\\Users\\Stocm\\Desktop\\Reenbit\\ReenbitTestTask\\EmailSenderTriger\\EmailSenderTriger\\EmailOptions.cs",
+              "RelativeToolTip": "EmailSenderTriger\\EmailOptions.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-02-14T09:00:17.417Z"
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-14T11:49:55.628Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Function1.cs",
-              "DocumentMoniker": "C:\\Users\\Stocm\\source\\repos\\EmailSenderTriger\\EmailSenderTriger\\Function1.cs",
-              "RelativeDocumentMoniker": "EmailSenderTriger\\Function1.cs",
-              "ToolTip": "C:\\Users\\Stocm\\source\\repos\\EmailSenderTriger\\EmailSenderTriger\\Function1.cs",
-              "RelativeToolTip": "EmailSenderTriger\\Function1.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAAAsAAAAjAAAA",
+              "Title": "SendEmailTriger.cs",
+              "DocumentMoniker": "C:\\Users\\Stocm\\Desktop\\Reenbit\\ReenbitTestTask\\EmailSenderTriger\\EmailSenderTriger\\SendEmailTriger.cs",
+              "RelativeDocumentMoniker": "EmailSenderTriger\\SendEmailTriger.cs",
+              "ToolTip": "C:\\Users\\Stocm\\Desktop\\Reenbit\\ReenbitTestTask\\EmailSenderTriger\\EmailSenderTriger\\SendEmailTriger.cs",
+              "RelativeToolTip": "EmailSenderTriger\\SendEmailTriger.cs",
+              "ViewState": "AQIAADkAAAAAAAAAAAAAABsAAABuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-14T08:43:24.77Z",
+              "WhenOpened": "2024-02-14T11:44:03.47Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "local.settings.json",
+              "DocumentMoniker": "C:\\Users\\Stocm\\Desktop\\Reenbit\\ReenbitTestTask\\EmailSenderTriger\\EmailSenderTriger\\local.settings.json",
+              "RelativeDocumentMoniker": "EmailSenderTriger\\local.settings.json",
+              "ToolTip": "C:\\Users\\Stocm\\Desktop\\Reenbit\\ReenbitTestTask\\EmailSenderTriger\\EmailSenderTriger\\local.settings.json",
+              "RelativeToolTip": "EmailSenderTriger\\local.settings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAABSAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-02-14T11:47:37.343Z"
             }
           ]
         }
