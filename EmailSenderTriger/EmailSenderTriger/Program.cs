@@ -11,7 +11,7 @@ var config = new ConfigurationBuilder()
     .SetBasePath(Directory.GetCurrentDirectory())
     .AddJsonFile("local.settings.json", optional: true, reloadOnChange: true)
     .AddEnvironmentVariables()
-    .Build(); ;
+    .Build();
 
 var host = new HostBuilder()
     .ConfigureFunctionsWorkerDefaults()

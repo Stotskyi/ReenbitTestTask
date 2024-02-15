@@ -42,15 +42,18 @@ namespace EmailSenderTriger
 
             var message = new SendGridMessage
             {
-                From = emailOptions.From,
-                Subject = emailOptions.Subject,
-                PlainTextContent = $"I hope this message finds you well! 🌟\r\n\r\nI wanted to let you know that the file you uploaded to our blob storage has been successfully processed. You can access it using the link below. Just a heads up, the link will remain active for the next hour, so make sure to grab your file within that time frame:\n{await CreateServiceSASBlob(file)}" 
+                From = new EmailAddress("reenbit.testing.task.by.stotskyi@gmail.com","Andrii Stotskyi"),
+                Subject = "File Successfully Uploaded: Access Details Inside (uses without ioptions)",
+                PlainTextContent = $"I hope this message finds you well!I wanted to let you know that the file you uploaded to our blob storage has been successfully processed. You can access it using the link below. Just a heads up, the link will remain active for the next hour, so make sure to grab your file within that time frame:{await CreateServiceSASBlob(file)}" 
             };
 
 
-            message.AddTo(new EmailAddress(email));
+            message.AddTo(new EmailAddress(email, "Testing User"));
             var response = await sendGridClient.SendEmailAsync(message);
-    
+            _logger.LogInformation(response.Body.ToString(), response.Headers, response.StatusCode);
+            _logger.LogError(response.Body.ToString(), response.Headers, response.StatusCode);
+            _logger.LogDebug(response.Body.ToString(), response.Headers, response.StatusCode);
+
         }
         public static async Task<string> CreateServiceSASBlob( BlobClient blobClient,  string storedPolicyName = null)
         {
