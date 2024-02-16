@@ -1,0 +1,46 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">      
+      <div class="card">
+        <div class="card-body">
+          <form #customForm="ngForm" (ngSubmit)="mySubmit(customForm)">
+          
+            <div class="form-group">
+              <label for="email" class="email-label">Email:</label>
+              <input type="email" id="email" name="email" ngModel #email="ngModel" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" class="form-control" />
+                <p *ngIf="email.errors?.required">Email is required</p>
+                <p *ngIf="email.errors?.pattern">Not a valid Email</p>
+              </div>
+          
+            <div *ngIf="email.valid" class="form-group">
+              <label for="fileUpload" class="file-label">Choose File:</label>
+              <input type="file" id="fileUpload" class="form-control-file" (change)="onChange($event)" #fileUpload />
+              <p *ngIf="fileError">Only .docx allowed!</p>
+            </div>
+
+            <button type="submit" [disabled]="customForm.invalid" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="file" class="container mt-4">
+  <div class="file-details card">
+    <div class="card-body">
+      <h5 class="card-title">File details:</h5>
+      <ul class="list-unstyled">
+        <li><strong>Name:</strong> {{file.name}}</li>
+        <li><strong>Type:</strong> {{file.type}}</li>
+        <li><strong>Size:</strong> {{file.size}} bytes</li>
+      </ul>
+      <div [ngSwitch]="status" class="status-section mt-3">
+        <p *ngSwitchCase="'uploading'" class="text-info">⏳ Uploading...</p>
+        <p *ngSwitchCase="'success'" class="text-success">✅ Done!</p>
+        <p *ngSwitchCase="'fail'" class="text-danger">❌ Error!</p>
+        <p *ngSwitchDefault class="text-muted">😶 Waiting to upload...</p>
+      </div>
+    </div>
+  </div>
+</div>

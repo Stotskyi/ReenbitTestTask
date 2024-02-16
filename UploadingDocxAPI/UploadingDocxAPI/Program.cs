@@ -24,7 +24,13 @@ public class Program
 
         });
         var app = builder.Build();
-
+        
+        app.UseCors(builder =>
+        {
+            builder.WithOrigins("http://localhost:4200")
+                .AllowAnyHeader()
+                .AllowAnyMethod();
+        });
         // Configure the HTTP request pipeline.
         if (app.Environment.IsDevelopment())
         {
