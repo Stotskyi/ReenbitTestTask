@@ -21,12 +21,6 @@ public class AzureBlobService
         var streamContent = file.OpenReadStream();
         var response = await  _containerClient.UploadBlobAsync(file.FileName, streamContent, default);
         return response.ToString();
-        await using (MemoryStream data = new MemoryStream())
-        {
-            file.CopyTo(data);
-            data.Position = 0;
-            
-        }
     }
 
     public async Task<Response<BlobInfo>> SetMetadata(string fileName,string email)
