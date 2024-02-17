@@ -54,10 +54,9 @@ export class UploadFormComponent {
       const formData = new FormData();
       this.status = 'uploading';
       
-
       formData.append('file', this.file, this.file.name);
       formData.append('email',this.email)
-      const upload$ = this.http.post("http://localhost:5210/api/Attachment", formData).subscribe(
+      const upload$ = this.http.post("https://uploadingdocxapi.azurewebsites.net/api/Attachment", formData).subscribe(
         response => {
           console.log('Upload successful!', response);
           this.status = 'success';

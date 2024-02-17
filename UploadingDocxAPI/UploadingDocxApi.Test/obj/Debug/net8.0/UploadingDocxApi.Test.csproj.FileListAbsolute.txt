@@ -126,3 +126,4 @@ C:\Users\Stocm\Desktop\Reenbit\ReenbitTestTask\UploadingDocxAPI\UploadingDocxApi
 C:\Users\Stocm\Desktop\Reenbit\ReenbitTestTask\UploadingDocxAPI\UploadingDocxApi.Test\obj\Debug\net8.0\UploadingDocxApi.Test.pdb
 C:\Users\Stocm\Desktop\Reenbit\ReenbitTestTask\UploadingDocxAPI\UploadingDocxApi.Test\obj\Debug\net8.0\UploadingDocxApi.Test.genruntimeconfig.cache
 C:\Users\Stocm\Desktop\Reenbit\ReenbitTestTask\UploadingDocxAPI\UploadingDocxApi.Test\obj\Debug\net8.0\ref\UploadingDocxApi.Test.dll
+C:\Users\Stocm\Desktop\Reenbit\ReenbitTestTask\UploadingDocxAPI\UploadingDocxApi.Test\bin\Debug\net8.0\appsettings.Production.json

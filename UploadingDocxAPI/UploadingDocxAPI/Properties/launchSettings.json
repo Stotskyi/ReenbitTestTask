@@ -9,14 +9,14 @@
     }
   },
   "profiles": {
-    "http": {
+    "http(prod)": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
       "launchUrl": "swagger",
       "applicationUrl": "http://localhost:5210",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ASPNETCORE_ENVIRONMENT": "Production",
         "AZURE_TENANT_ID": "7631cd62-5187-4e15-8b8e-ef653e366e7a",
         "AZURE_CLIENT_ID": "6090dd3f-5f61-43f0-bc0a-87a352387032",
         "AZURE_CLIENT_SECRET": "7Cw8Q~LXVVWxz9F5we6TI87Z0GEXHuZYYYKNydqq"

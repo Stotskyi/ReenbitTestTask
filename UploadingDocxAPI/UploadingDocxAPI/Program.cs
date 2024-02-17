@@ -9,7 +9,13 @@ public class Program
     public static void Main(string[] args)
     {
         var builder = WebApplication.CreateBuilder(args);
-
+        
+        var config = new ConfigurationBuilder()
+            .SetBasePath(Directory.GetCurrentDirectory())
+            .AddJsonFile("appsettings.Production.json", optional: true, reloadOnChange: true)
+            .AddEnvironmentVariables()
+            .Build();
+        
         // Add services to the container.
         builder.Services.AddAuthorization();
         builder.Services.AddControllers();
@@ -19,7 +25,7 @@ public class Program
         builder.Services.AddSingleton<AzureBlobService>();
         builder.Services.AddAzureClients(clientBuilder =>
         {
-            clientBuilder.AddBlobServiceClient(new Uri(builder.Configuration["BlobStorageUri"]));
+            clientBuilder.AddBlobServiceClient(config.GetSection("AzureWebJobsStorage"));
             clientBuilder.UseCredential(new DefaultAzureCredential());
 
         });
