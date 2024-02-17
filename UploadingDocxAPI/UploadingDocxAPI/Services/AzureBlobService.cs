@@ -1,10 +1,11 @@
 ﻿using Azure;
 using Azure.Storage.Blobs;
 using Azure.Storage.Blobs.Models;
+using UploadingDocxAPI.Interfaces;
 
 namespace UploadingDocxAPI.Services;
 
-public class AzureBlobService
+public class AzureBlobService : IAzureBlobService
 {
     private readonly  BlobServiceClient _blobCliet;
     private readonly BlobContainerClient _containerClient;

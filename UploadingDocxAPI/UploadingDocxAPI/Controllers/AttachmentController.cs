@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using UploadingDocxAPI.Interfaces;
 using UploadingDocxAPI.Services;
 
 namespace UploadingDocxAPI.Controllers;
@@ -7,9 +8,9 @@ namespace UploadingDocxAPI.Controllers;
 [ApiController]
 public class AttachmentController : ControllerBase
 {
-    private readonly AzureBlobService _service;
+    private readonly IAzureBlobService _service;
 
-    public AttachmentController(AzureBlobService service)
+    public AttachmentController(IAzureBlobService service)
     {
         _service = service;
     }

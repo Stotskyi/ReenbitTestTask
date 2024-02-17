@@ -1,5 +1,6 @@
 using Azure.Identity;
 using Microsoft.Extensions.Azure;
+using UploadingDocxAPI.Interfaces;
 using UploadingDocxAPI.Services;
 
 namespace UploadingDocxAPI;
@@ -20,7 +21,7 @@ public class Program
         builder.Services.AddControllers();
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
-        builder.Services.AddSingleton<AzureBlobService>();
+        builder.Services.AddScoped<IAzureBlobService,AzureBlobService>();
         builder.Services.AddAzureClients(clientBuilder =>
         {
             clientBuilder.AddBlobServiceClient(config.GetSection("AzureWebJobsStorage"));
