@@ -16,10 +16,8 @@ public class Program
             .AddEnvironmentVariables()
             .Build();
         
-        // Add services to the container.
         builder.Services.AddAuthorization();
         builder.Services.AddControllers();
-        // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
         builder.Services.AddSingleton<AzureBlobService>();
@@ -37,7 +35,6 @@ public class Program
                 .AllowAnyHeader()
                 .AllowAnyMethod();
         });
-        // Configure the HTTP request pipeline.
         if (app.Environment.IsDevelopment())
         {
             app.UseSwagger();
@@ -45,7 +42,6 @@ public class Program
         }
 
         app.UseHttpsRedirection();
-        
         app.UseAuthorization();
         app.MapControllers();
 

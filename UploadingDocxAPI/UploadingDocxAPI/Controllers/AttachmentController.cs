@@ -17,9 +17,8 @@ public class AttachmentController : ControllerBase
     [HttpPost]
     public async Task<IActionResult> UploadFile(IFormFile file,[FromForm] string email)
     {
-        var response = await _service.UploadFiles(file);
-        var response1 = await _service.SetMetadata(file.FileName,email);
-        return Ok();
+        var response = await _service.UploadFiles(file, email);
+        return Ok(response);
     }
    
 }
