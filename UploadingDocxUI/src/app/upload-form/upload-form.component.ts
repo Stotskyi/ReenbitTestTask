@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { throwError } from 'rxjs';
-import { FormBuilder, FormControl, FormGroup, NgForm, Validators } from '@angular/forms';
-import { FormsModule } from '@angular/forms';
+import { FormBuilder,NgForm } from '@angular/forms';
+import { API_URL } from '../../environments/environment';
+
 
 @Component({
   selector: 'app-upload-form',
@@ -56,7 +56,7 @@ export class UploadFormComponent {
       
       formData.append('file', this.file, this.file.name);
       formData.append('email',this.email)
-      const upload$ = this.http.post("https://uploadingdocxapi.azurewebsites.net/api/Attachment", formData).subscribe(
+      const upload$ = this.http.post(API_URL+"api/Attachment", formData).subscribe(
         response => {
           console.log('Upload successful!', response);
           this.status = 'success';
