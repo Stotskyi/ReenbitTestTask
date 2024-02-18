@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EmailSenderTriger.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e9fe1f875802953e5bee39683f09baf208c20068")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a379bdd15529fed17f148b4787e042b54981afae")]
 [assembly: System.Reflection.AssemblyProductAttribute("EmailSenderTriger.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EmailSenderTriger.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

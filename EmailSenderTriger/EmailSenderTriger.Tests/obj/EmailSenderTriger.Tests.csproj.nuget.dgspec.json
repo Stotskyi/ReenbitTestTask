@@ -129,6 +129,10 @@
               "target": "Package",
               "version": "[12.19.1, )"
             },
+            "Bitly.Net": {
+              "target": "Package",
+              "version": "[0.0.6, )"
+            },
             "Microsoft.ApplicationInsights.WorkerService": {
               "target": "Package",
               "version": "[2.21.0, )"
