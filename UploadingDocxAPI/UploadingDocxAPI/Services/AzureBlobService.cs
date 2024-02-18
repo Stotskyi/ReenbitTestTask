@@ -40,9 +40,7 @@ public class AzureBlobService : IAzureBlobService
         }
         catch (RequestFailedException e)
         {
-            throw new RequestFailedException("Service request fails.");
+            return null;
         }
-
-        return null;
     }
 }

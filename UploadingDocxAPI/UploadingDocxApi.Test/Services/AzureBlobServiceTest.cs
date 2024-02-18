@@ -56,7 +56,7 @@ public class AzureBlobServiceTest
     }
 
     [Fact]
-    public async Task UploadFiles_WhenSettingMetadataFails_ShouldReturnNull()
+    public async Task UploadFiles_WhenSettingMetadataFails_ShouldThrowRequestFailedException()
     {
         // Arrange
         var fakeBlobServiceClient = A.Fake<BlobServiceClient>();
