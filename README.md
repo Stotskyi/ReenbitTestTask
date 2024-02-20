@@ -1,4 +1,4 @@
-# AZureDocxUploader Web App
+# AzureDocxUploader Web App
 
 ## Overview
 EmailDocxUploader is a program designed to upload DOCX files to Azure Blob Storage and send email notifications with access links. The program utilizes Angular for the frontend, .NET Core Web API for handling requests, Azure Functions for executing Blob Storage-related functionality, and an email service for sending messages.
