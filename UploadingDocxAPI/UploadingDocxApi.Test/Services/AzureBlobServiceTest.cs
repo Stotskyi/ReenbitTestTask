@@ -27,7 +27,7 @@ public class AzureBlobServiceTest
         var fakeEmail = A.Fake<String>();
 
         // Act
-        var result = await azureBlobService.UploadFiles(fakeFile, fakeEmail);
+        var result = await azureBlobService.UploadFilesAsync(fakeFile, fakeEmail);
 
         // Assert
         Assert.NotNull(result);
@@ -48,7 +48,7 @@ public class AzureBlobServiceTest
         var azureBlobService = new AzureBlobService(fakeBlobServiceClient, A.Fake<IConfiguration>());
 
         // Act
-        var result = await azureBlobService.SetMetadata("example.docx", "test@example.com");
+        var result = await azureBlobService.SetMetadataAsync("example.docx", "test@example.com");
 
         // Assert
         Assert.NotNull(result);
@@ -67,12 +67,12 @@ public class AzureBlobServiceTest
         A.CallTo(() => fakeContainerClient.GetBlobClient(A<string>._)).Returns(fakeBlobClient);
 
         var fakeAzureBlobService = A.Fake<IAzureBlobService>(); // Use the interface
-        A.CallTo(() => fakeAzureBlobService.SetMetadata("example.docx", "s2332fandrii@gmail.com"))
+        A.CallTo(() => fakeAzureBlobService.SetMetadataAsync("example.docx", "s2332fandrii@gmail.com"))
             .ThrowsAsync(new RequestFailedException("Service request fails."));
 
         // Assert
         await Assert.ThrowsAsync<RequestFailedException>(() =>
-            fakeAzureBlobService.SetMetadata("example.docx", "s2332fandrii@gmail.com"));
+            fakeAzureBlobService.SetMetadataAsync("example.docx", "s2332fandrii@gmail.com"));
     }
 }
 

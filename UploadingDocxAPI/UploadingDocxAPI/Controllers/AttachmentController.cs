@@ -18,7 +18,7 @@ public class AttachmentController : ControllerBase
     [HttpPost]
     public async Task<IActionResult> UploadFile(IFormFile file,[FromForm] string email)
     {
-        var response = await _service.UploadFiles(file, email);
+        var response = await _service.UploadFilesAsync(file, email);
         return Ok(response);
     }
    
